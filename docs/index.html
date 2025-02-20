@@ -25,8 +25,10 @@
             window.onload = function() {
                 var today = new Date();
                 var resultElement = document.getElementById('result');
-                if (today.getDate() === 18 && today.getMonth() === 8) { // Los meses empiezan desde el 0
-                    document.body.style.backgroundColor = 'white';
+                if (today.getDate() === 20 && today.getMonth() === 1) { // Los meses empiezan desde el 0
+                    document.body.style.backgroundImage = 'url("pudu.jpg")';
+                    document.body.style.backgroundSize = 'cover';
+                    document.body.style.backgroundPosition = 'center';
                     resultElement.style.color = 'black';
                     resultElement.innerHTML = 'SI';
                 } else {
